@@ -1,5 +1,12 @@
 # Capstone_Project-CS[02] — CV Sorting using LLMs
 
+## Documentation
+
+- [Overview — summary, features, LLMs, NFRs](docs/overview.md)
+- [Technical guide — steps & architecture](docs/technical-guide.md)
+
+---
+
 Rank candidate CVs against a job description using two free local Ollama models: **llama3.2** + **gemma2**.
 
 ## Layout
@@ -12,6 +19,7 @@ Capstone_Project-CS[02]/
 │   ├── config.py / parsers.py / prompts.py / llm_client.py / matcher.py / ranker.py
 │   ├── test_*.py      # edge-case unit tests
 │   └── sample_data/   # demo JD + CVs
+├── docs/              # project overview + technical guide
 └── Report/
     └── Report.pdf     # ≤3 page report
 ```
