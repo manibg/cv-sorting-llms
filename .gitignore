@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+ranked_results.json
+.DS_Store
+*.log
+.coverage
+htmlcov/
+.vscode/*.log

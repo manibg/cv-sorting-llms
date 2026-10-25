@@ -1,0 +1,46 @@
+Senior Software Engineer
+
+Location: Hybrid / Remote-friendly
+Experience required: 5+ years of professional software development
+
+About the role
+We are hiring a Senior Software Engineer to design, build, and operate high-quality backend services that power customer-facing products. You will lead technical design for medium-to-large features, raise engineering standards, and mentor other engineers while shipping reliable systems in production.
+
+Must-have skills
+- 5+ years of professional experience building production software
+- Strong proficiency in at least one of: Java, Python, Go, or TypeScript/Node.js
+- Solid experience designing and operating REST (and/or gRPC) microservices
+- Relational databases and SQL (PostgreSQL/MySQL) including schema design and query performance
+- Cloud experience in AWS, GCP, or Azure
+- Containerization and deployment basics (Docker; Kubernetes or equivalent orchestration is a plus)
+- Automated testing (unit/integration) and CI/CD
+- System design skills: scalability, reliability, observability, and trade-off analysis
+- Proven ability to mentor engineers and lead design discussions
+
+Nice-to-have skills
+- Event-driven architecture (Kafka, SQS/SNS, Pub/Sub)
+- Caching (Redis) and search (Elasticsearch/OpenSearch)
+- Infrastructure as code (Terraform)
+- Frontend familiarity (React/TypeScript) for full-stack collaboration
+- Experience with high-traffic consumer or e-commerce platforms
+- Security best practices (authn/authz, secrets, OWASP basics)
+
+Responsibilities
+- Own end-to-end delivery of features across design, implementation, testing, rollout, and monitoring
+- Write clean, maintainable, well-tested code and conduct high-quality code reviews
+- Lead technical design for complex projects; document ADRs and interface contracts
+- Improve service reliability (SLOs, alerting, incident response, postmortems)
+- Partner with product, design, and data teams to refine requirements and sequencing
+- Mentor junior/mid engineers through pairing, reviews, and technical guidance
+- Continuously reduce toil via tooling, automation, and platform improvements
+
+Minimum qualifications
+- Bachelor’s degree in Computer Science or equivalent practical experience
+- 5+ years shipping and operating production services
+- Excellent communication skills with engineers and cross-functional partners
+- Comfortable owning ambiguous problems and driving them to measurable outcomes
+
+What success looks like in 6 months
+- Delivered at least one cross-team initiative with clear reliability and product impact
+- Measurable improvement in service health (latency, error rate, or deploy confidence)
+- Recognized as a go-to technical mentor within the squad

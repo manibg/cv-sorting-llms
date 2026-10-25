@@ -1,0 +1,19 @@
+Lena Okonkwo
+lena.okonkwo@example.com
++44 7700 900214
+
+Summary
+Data Engineer with 7 years of experience in Azure analytics platforms and governed lakehouse design.
+
+Skills
+Python, SQL, Apache Spark, Azure (Data Factory, Databricks, Synapse, ADLS), Airflow, Delta Lake, Kafka, Power BI, Data Governance, Docker
+
+Experience
+- Built Databricks Spark pipelines on Delta Lake for retail inventory and demand data
+- Orchestrated multi-cloud ingestion with Azure Data Factory and Airflow
+- Introduced data contracts and catalog metadata for regulated datasets
+- Tuned Synapse/SQL workloads for dashboard SLAs under 5 minutes
+
+Education
+M.Sc. Information Systems
+EOF

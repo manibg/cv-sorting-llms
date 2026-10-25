@@ -1,0 +1,6 @@
+pypdf>=4.0.0
+requests>=2.28.0
+fastapi>=0.110.0
+uvicorn>=0.27.0
+python-multipart>=0.0.9
+# Optional: pytest>=7.0.0  (tests also run via: python -m unittest)

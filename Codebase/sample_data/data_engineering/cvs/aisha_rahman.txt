@@ -1,0 +1,26 @@
+Aisha Rahman
+aisha.rahman@example.com
++1 555-703-3303
+
+Summary
+Data Engineer with 4 years of experience specializing in Databricks lakehouse pipelines, PySpark transformations, and Azure cloud services. Delivers governed, production-grade datasets for enterprise analytics.
+
+Skills
+Python, SQL, PySpark, Databricks, Azure (Data Factory, Data Lake, Synapse), Delta Lake, Airflow, Kafka, Great Expectations, Git, CI/CD, Docker, Unity Catalog
+
+Experience
+Data Engineer — Meridian Health Systems (2022 – Present)
+- Built PySpark/Delta pipelines on Databricks for claims, encounters, and provider data
+- Orchestrated multi-stage jobs with Azure Data Factory and Airflow
+- Implemented SCD Type 2 dimensions and conformed clinical reference datasets
+- Added Great Expectations suites for null rates, referential integrity, and volume anomalies
+- Supported on-call rotations for critical overnight batch windows
+
+ETL Developer — Orion Insights (2021 – 2022)
+- Migrated legacy SSIS packages to Python and Spark jobs on Azure Data Lake
+- Wrote complex SQL for Synapse analytics marts consumed by Power BI
+- Documented data contracts with upstream EHR integration partners
+
+Education
+M.S. Data Science
+4 years of experience in data engineering and ETL development

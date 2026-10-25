@@ -1,0 +1,26 @@
+Elena Vasquez
+elena.vasquez@example.com
++1 555-801-1101
+
+Summary
+Senior Software Engineer with 7 years of experience building Java and Kotlin microservices on AWS. Strong in system design, PostgreSQL performance, and mentoring. Ships reliable APIs for high-traffic consumer products.
+
+Skills
+Java, Kotlin, Spring Boot, Python, PostgreSQL, AWS (ECS, Lambda, SQS, RDS), Docker, Kubernetes, Redis, Kafka, gRPC, REST, CI/CD, Terraform, JUnit, Observability (OpenTelemetry, Datadog), System Design, Mentoring
+
+Experience
+Senior Software Engineer — Orbit Commerce (2021 – Present)
+- Led redesign of checkout orchestration service handling 2k RPS peak with p99 under 120ms
+- Designed event-driven order pipeline using Kafka and SQS with idempotent consumers
+- Drove PostgreSQL partitioning and query tuning that cut timeout incidents by 60%
+- Mentored 3 mid-level engineers; introduced ADR templates and on-call runbooks
+- Owned SLOs, alerting, and postmortems for payments-adjacent services
+
+Software Engineer — Nimbus Soft (2018 – 2021)
+- Built Spring Boot REST/gRPC services for catalog and inventory domains
+- Containerized services with Docker and deployed on ECS with blue/green releases
+- Added integration test suites and CI pipelines in GitHub Actions
+
+Education
+B.S. Computer Science
+7 years of experience in backend software engineering

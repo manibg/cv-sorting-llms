@@ -1,0 +1,24 @@
+Sophia Bennett
+sophia.bennett@example.com
++1 555-705-5505
+
+Summary
+Business Intelligence analyst with 6 years of dashboarding experience. Limited hands-on data engineering. Strong SQL for reporting; minimal Python pipeline or cloud orchestration background.
+
+Skills
+SQL, Tableau, Power BI, Excel, Google Sheets, basic Python, Snowflake (query only), Agile
+
+Experience
+Senior BI Analyst — Contour Media (2020 – Present)
+- Designed executive Tableau dashboards for subscription revenue and churn
+- Wrote complex SQL against Snowflake views owned by the data platform team
+- Coordinated requirements with finance and marketing stakeholders
+- Occasionally requested pipeline changes but did not build or operate ETL jobs
+
+BI Analyst — Harbor Retail (2018 – 2020)
+- Built Power BI reports from curated warehouse tables
+- Performed ad-hoc Excel analysis and data cleaning for campaign reviews
+
+Education
+B.B.A. Business Analytics
+6 years of experience in business intelligence and reporting

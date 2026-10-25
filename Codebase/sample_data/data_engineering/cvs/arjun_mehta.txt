@@ -1,0 +1,19 @@
+Arjun Mehta
+arjun.mehta@example.com
++91 98100 22334
+
+Summary
+Backend-leaning engineer with 3 years of experience; transitioning toward data engineering.
+
+Skills
+Python, Java, SQL, PostgreSQL, REST APIs, Docker, Linux, Git, Basic Spark
+
+Experience
+- Built REST services and batch scripts that export operational data to PostgreSQL
+- Wrote SQL reports for business stakeholders
+- Containerized services with Docker and maintained CI pipelines
+- Completed internal Spark training; built a small Parquet ingestion POC
+
+Education
+B.E. Computer Engineering
+EOF

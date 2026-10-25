@@ -1,0 +1,23 @@
+Senior Python Backend Engineer
+
+We are hiring a Senior Python Backend Engineer to design and operate cloud-native APIs.
+
+Must have skills:
+- Python
+- Django or FastAPI
+- AWS
+- Docker
+- SQL
+
+Nice to have:
+- Kubernetes
+- NLP / LLM experience
+- Kafka
+
+Responsibilities:
+- Design REST microservices
+- Improve reliability and performance
+- Mentor junior engineers
+- Collaborate with product and data teams
+
+Minimum experience: 5 years

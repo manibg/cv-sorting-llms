@@ -1,0 +1,26 @@
+Maya Okonkwo
+maya.okonkwo@example.com
++1 555-803-3303
+
+Summary
+Senior Software Engineer with 8 years of experience, primarily Go and TypeScript. Deep experience in high-scale APIs, Kubernetes platforms, and reliability engineering practices.
+
+Skills
+Go, TypeScript, gRPC, REST, PostgreSQL, MySQL, AWS, Kubernetes, Docker, Kafka, Redis, Elasticsearch, Terraform, Prometheus, Grafana, CI/CD, System Design, Mentoring
+
+Experience
+Staff-leaning Senior Engineer — Vertex Streams (2020 – Present)
+- Owned media metadata API platform on Kubernetes serving tens of millions of daily requests
+- Led migration from REST-only interfaces to hybrid REST/gRPC with backward-compatible versioning
+- Built Kafka consumers for catalog sync with exactly-once processing guarantees where required
+- Improved deploy safety with canaries, feature flags, and automated rollback hooks
+- Mentored engineers across two squads on design reviews and production debugging
+
+Software Engineer — BlueHarbor (2017 – 2020)
+- Developed Go microservices for subscription billing and entitlement checks
+- Introduced structured logging/metrics and reduced MTTR during incident response
+- Collaborated with SRE on capacity planning and autoscaling policies
+
+Education
+M.S. Computer Science
+8 years of experience in distributed backend systems

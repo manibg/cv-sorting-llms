@@ -1,0 +1,17 @@
+Cara Lee
+cara.lee@example.com
++1 555-500-6000
+
+Summary
+Senior engineer with 8 years of experience in Python platforms, cloud, and NLP.
+
+Skills
+Python, FastAPI, AWS, Docker, Kubernetes, NLP, LLM, Kafka, PostgreSQL, CI/CD
+
+Experience
+- Designed FastAPI microservices on Kubernetes and AWS
+- Shipped NLP/LLM features for document ranking
+- Owned on-call for high-traffic APIs
+
+Education
+M.S. Machine Learning

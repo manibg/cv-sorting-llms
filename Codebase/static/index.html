@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rankline — CV Sorting with LLMs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <p class="brand-name">Rankline</p>
+        <p class="brand-sub">CV sorting with local LLMs</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <div id="statusPill" class="status-pill" role="status">Checking Ollama…</div>
+      <button type="button" id="helpBtn" class="ghost-btn" aria-expanded="false" aria-controls="helpPanel">Inputs</button>
+    </div>
+  </header>
+
+  <aside id="helpPanel" class="help-panel" hidden>
+    <h2>What can you upload?</h2>
+    <div class="help-grid">
+      <section>
+        <h3>Candidate CVs</h3>
+        <ul>
+          <li><strong>.txt</strong> — plain text resumes</li>
+          <li><strong>.pdf</strong> — text-based PDFs</li>
+          <li><strong>.docx</strong> — Word documents</li>
+        </ul>
+        <p>Upload one or many. Mix formats freely.</p>
+      </section>
+      <section>
+        <h3>Job description</h3>
+        <ul>
+          <li>Upload <strong>.txt / .pdf / .docx</strong>, or</li>
+          <li><strong>Paste</strong> the JD as text</li>
+        </ul>
+        <p>Use exactly one JD source per run.</p>
+      </section>
+      <section>
+        <h3>Optional controls</h3>
+        <ul>
+          <li>Models: llama3.2 + gemma2</li>
+          <li>Required skills filter</li>
+          <li>Mock mode (offline demo)</li>
+        </ul>
+      </section>
+    </div>
+  </aside>
+
+  <main class="workspace">
+    <section class="panel input-panel" aria-labelledby="setupTitle">
+      <div class="panel-head">
+        <h1 id="setupTitle">Set up a ranking run</h1>
+        <p>Drop resumes, add a role, then let both models score the fit.</p>
+      </div>
+
+      <form id="rankForm" novalidate>
+        <div class="field">
+          <div class="field-label-row">
+            <label for="cvInput">Candidate CVs</label>
+            <span class="hint">.txt · .pdf · .docx</span>
+          </div>
+          <label class="dropzone" id="cvDropzone" for="cvInput">
+            <input id="cvInput" name="cvs" type="file" accept=".txt,.pdf,.docx,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" multiple />
+            <span class="drop-title">Drop CVs here</span>
+            <span class="drop-sub">or click to browse — multiple files OK</span>
+          </label>
+          <ul id="cvList" class="file-list" aria-live="polite"></ul>
+        </div>
+
+        <div class="field">
+          <div class="field-label-row">
+            <label>Job description</label>
+            <div class="seg" role="tablist" aria-label="JD input mode">
+              <button type="button" class="seg-btn active" data-jd-mode="paste" role="tab" aria-selected="true">Paste</button>
+              <button type="button" class="seg-btn" data-jd-mode="file" role="tab" aria-selected="false">Upload</button>
+            </div>
+          </div>
+          <textarea id="jdText" name="jd_text" rows="8" placeholder="Paste the full job description here — must-haves, nice-to-haves, responsibilities…"></textarea>
+          <label class="dropzone compact hidden" id="jdDropzone" for="jdInput">
+            <input id="jdInput" name="jd_file" type="file" accept=".txt,.pdf,.docx,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+            <span class="drop-title">Drop JD file</span>
+            <span class="drop-sub">.txt · .pdf · .docx</span>
+          </label>
+          <p id="jdFileName" class="file-chip hidden"></p>
+        </div>
+
+        <div class="controls-grid">
+          <div class="field">
+            <label>Models</label>
+            <div class="model-row">
+              <label class="check">
+                <input type="checkbox" name="model" value="llama3.2" checked />
+                <span>llama3.2</span>
+              </label>
+              <label class="check">
+                <input type="checkbox" name="model" value="gemma2" checked />
+                <span>gemma2</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="skillsInput">Required skills <span class="optional">(optional)</span></label>
+            <input id="skillsInput" name="required_skills" type="text" placeholder="python, aws, docker" />
+            <div id="skillChips" class="chips" aria-live="polite"></div>
+          </div>
+
+          <label class="switch-row">
+            <input id="mockToggle" type="checkbox" />
+            <span class="switch-ui" aria-hidden="true"></span>
+            <span>
+              <strong>Mock mode</strong>
+              <small>Offline demo without Ollama</small>
+            </span>
+          </label>
+        </div>
+
+        <div class="action-row">
+          <button type="submit" id="runBtn" class="primary-btn">
+            <span class="btn-label">Rank candidates</span>
+            <span class="btn-spinner" hidden></span>
+          </button>
+          <button type="button" id="sampleBtn" class="ghost-btn">Try sample data</button>
+          <button type="button" id="resetBtn" class="ghost-btn">Reset</button>
+        </div>
+        <p id="formError" class="form-error" role="alert" hidden></p>
+      </form>
+    </section>
+
+    <section class="panel results-panel" aria-labelledby="resultsTitle">
+      <div class="panel-head results-head">
+        <div>
+          <h2 id="resultsTitle">Ranked results</h2>
+          <p id="resultsMeta">Run a sort to see scores, evidence, and model agreement.</p>
+        </div>
+        <div class="results-actions">
+          <button type="button" id="exportBtn" class="ghost-btn" disabled>Export JSON</button>
+        </div>
+      </div>
+
+      <div id="emptyState" class="empty-state">
+        <p class="empty-title">Waiting for a run</p>
+        <p>Upload CVs and a job description, or load the built-in sample set to preview the full ranking flow.</p>
+      </div>
+
+      <div id="progressState" class="progress-state hidden" aria-live="polite">
+        <div class="progress-bar"><span></span></div>
+        <p id="progressText">Scoring candidates with llama3.2 and gemma2…</p>
+      </div>
+
+      <div id="resultsBody" class="results-body hidden">
+        <div id="summaryStrip" class="summary-strip"></div>
+        <ol id="rankList" class="rank-list"></ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Capstone CS[02] · Dual-model ranking · Terminal CLI remains available via <code>main.py</code></p>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

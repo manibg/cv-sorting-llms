@@ -1,0 +1,27 @@
+# Capstone_Project-CS[02] — CV Sorting using LLMs
+# Models: llama3.2 + gemma2 via Ollama (free, local)
+
+# 1) Install dependencies
+pip install -r requirements.txt
+
+# 2) Install & start Ollama (https://ollama.com), then pull models:
+#    ollama serve
+#    ollama pull llama3.2
+#    ollama pull gemma2
+
+# 3) Run ranking (replace paths with your CVs + job description)
+python main.py --cvs ./sample_data/cvs --jd ./sample_data/job_description.txt --models llama3.2,gemma2 --output ./ranked_results.json
+
+# Optional: refine ranking with hard skills
+python main.py --cvs ./sample_data/cvs --jd ./sample_data/job_description.txt --required-skills python,aws --output ./ranked_results.json
+
+# Offline / CI demo without Ollama (deterministic mock LLMs)
+python main.py --cvs ./sample_data/cvs --jd ./sample_data/job_description.txt --mock --output ./ranked_results.json
+
+# Interactive demo UI (browser)
+#   Accepted inputs: CV .txt/.pdf/.docx (multi) + JD .txt/.pdf/.docx or pasted text
+python ui_server.py
+# open http://127.0.0.1:7860
+
+# Run unit tests (stdlib unittest — no pytest required)
+python -m unittest discover -s . -p 'test_*.py' -v

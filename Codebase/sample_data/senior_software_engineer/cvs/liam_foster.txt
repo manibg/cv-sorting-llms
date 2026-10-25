@@ -1,0 +1,24 @@
+Liam Foster
+liam.foster@example.com
++1 555-804-4404
+
+Summary
+Software Engineer with 3.5 years of experience building features in a product engineering team. Solid coding fundamentals in JavaScript/TypeScript; limited ownership of large system design, mentoring, and production operations at senior scope.
+
+Skills
+TypeScript, JavaScript, React, Node.js, Express, MongoDB, basic PostgreSQL, Jest, Git, Docker (basic), REST APIs
+
+Experience
+Software Engineer — Pineapple Apps (2022 – Present)
+- Implemented customer-facing React features and Node.js API endpoints for account settings
+- Wrote unit tests with Jest and participated in code reviews
+- Helped migrate a few Express routes; most infrastructure owned by platform team
+- Limited on-call exposure; focused primarily on feature delivery
+
+Junior Developer — CivicSoft (2021 – 2022)
+- Built internal admin UI components and simple CRUD APIs
+- Fixed bugs and wrote documentation for sprint deliverables
+
+Education
+B.S. Software Engineering
+3.5 years of experience in full-stack web development

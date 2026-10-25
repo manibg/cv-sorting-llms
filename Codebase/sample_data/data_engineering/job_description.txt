@@ -1,0 +1,44 @@
+Data Engineer (4+ Years)
+
+Location: Hybrid / Remote-friendly
+Experience required: 4+ years in data engineering or closely related roles
+
+About the role
+We are hiring a Data Engineer to design, build, and operate reliable data pipelines that power analytics, machine learning features, and operational reporting. You will own ingestion-to-warehouse workflows, improve data quality, and partner with analytics and platform teams.
+
+Must-have skills
+- 4+ years of professional experience in data engineering, ETL/ELT, or large-scale data platforms
+- Strong Python for data pipelines and automation
+- SQL (advanced): window functions, query tuning, data modeling
+- Cloud data stack experience in at least one of: AWS, GCP, or Azure
+- Batch and/or streaming pipelines (Airflow / Composer / Prefect / Dagster, and/or Spark / Kafka)
+- Data warehouse experience (Snowflake, BigQuery, Redshift, or Databricks)
+- Data modeling fundamentals (dimensional modeling, slowly changing dimensions)
+- Git, CI/CD basics, and production operational practices (monitoring, alerting, SLAs)
+
+Nice-to-have skills
+- dbt for transformation layer
+- Kafka / Kinesis / PubSub for near real-time ingestion
+- Spark (PySpark) for large-scale transforms
+- Infrastructure as code (Terraform)
+- Data quality frameworks (Great Expectations, Deequ, or similar)
+- Experience with lakehouse patterns (Delta / Iceberg)
+- Docker and basic Kubernetes exposure
+
+Responsibilities
+- Design and maintain scalable ETL/ELT pipelines from operational systems to the warehouse/lakehouse
+- Build reliable ingestion for structured and semi-structured data (APIs, databases, event streams, files)
+- Model analytics-ready tables and improve freshness, quality, and cost efficiency
+- Implement data quality checks, lineage awareness, and incident response for pipeline failures
+- Collaborate with analysts, ML engineers, and product teams on data contracts and requirements
+- Document pipelines, ownership, and runbooks; participate in on-call for critical data products
+
+Minimum qualifications
+- Bachelor’s degree in Computer Science, Information Systems, Engineering, or equivalent practical experience
+- 4+ years delivering production data pipelines in a business environment
+- Clear written and verbal communication with technical and non-technical partners
+
+What success looks like in 6 months
+- Owned pipelines meet defined SLAs with measurable quality checks
+- At least one major domain (e.g., orders, inventory, or customer) is modernized for reliability and cost
+- Stakeholders trust warehouse tables as the source of truth for reporting and ML features

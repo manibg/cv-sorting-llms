@@ -1,0 +1,155 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Length 2853 >>
+stream
+BT
+/F1 11 Tf
+14 TL
+50 720 Td
+(CV Sorting using LLMs \(Capstone_Project-CS[02]\)) Tj
+T*
+(Student ID: m0b0xhj) Tj
+T*
+() Tj
+T*
+(Abstract) Tj
+T*
+(This project implements an automated CV ranking system that scores candidate resumes) Tj
+T*
+(against a job description using two free local large language models \(llama3.2 and) Tj
+T*
+(gemma2\) served by Ollama. Resumes in TXT/PDF/DOCX are parsed into structured text, each) Tj
+T*
+(model produces an evidence-based fit score with strengths and gaps, and the scores are) Tj
+T*
+(aggregated into a transparent ranked list. The design is modular and plug-and-play: LLM) Tj
+T*
+(providers, parsers, and ranking logic are separable. A mock provider enables offline) Tj
+T*
+(testing of edge cases without a GPU.) Tj
+T*
+() Tj
+T*
+(1. Introduction) Tj
+T*
+(Recruiters spend significant time manually comparing resumes to role requirements.) Tj
+T*
+(Keyword filters miss context, while closed commercial APIs raise cost and privacy) Tj
+T*
+(concerns. This capstone builds a terminal-first ranking pipeline using open models that) Tj
+T*
+(can run locally.) Tj
+T*
+() Tj
+T*
+(2. Problem Statement) Tj
+T*
+(Given a job description and a set of candidate CVs, produce a ranked list with) Tj
+T*
+(explainable match scores that reflect skills, experience, education, and responsibility) Tj
+T*
+(alignment.) Tj
+T*
+() Tj
+T*
+(3. Objectives) Tj
+T*
+(- Parse CVs and job descriptions from common document formats.) Tj
+T*
+(- Use at least two LLMs \(llama3.2 + gemma2\) with justified dual scoring.) Tj
+T*
+(- Aggregate model outputs into a stable ranked list with explanations.) Tj
+T*
+(- Keep the codebase simple, testable, and free of LangChain complexity.) Tj
+T*
+(- Support plug-and-play LLM backends and offline mock evaluation.) Tj
+T*
+() Tj
+T*
+(4. Methodology) Tj
+T*
+(Tools: Python 3, Ollama, pypdf, requests. No LangChain.) Tj
+T*
+(Workflow: parse JD -> parse CVs -> prompt each LLM -> parse JSON scores -> weighted) Tj
+T*
+(aggregate -> rank -> export JSON + console table.) Tj
+T*
+(Modules: config.py, parsers.py, prompts.py, llm_client.py \(OllamaProvider /) Tj
+T*
+(MockLLMProvider\), matcher.py, ranker.py, main.py.) Tj
+T*
+(Model justification: llama3.2 provides strong general instruction following for) Tj
+T*
+(structured JSON scoring; gemma2 adds a second open-weight judgment to reduce) Tj
+T*
+(single-model bias. Equal weights \(0.5/0.5\) keep aggregation interpretable.) Tj
+T*
+() Tj
+T*
+(5. Results and Analysis) Tj
+T*
+(On the sample corpus \(Alice/Bob/Cara vs Senior Python Backend JD\), mock dual-model) Tj
+T*
+(ranking places Python/backend-aligned profiles above a Java/finance profile. With) Tj
+T*
+(--required-skills kubernetes, Cara ranks first due to explicit Kubernetes evidence. Unit) Tj
+T*
+(tests cover 40+ cases: empty/corrupt files, invalid LLM JSON, provider failures,) Tj
+T*
+(tie-breaking, and skill-filter refinement.) Tj
+ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 3 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Length 312 >>
+stream
+BT
+/F1 11 Tf
+14 TL
+50 720 Td
+() Tj
+T*
+(6. Conclusion) Tj
+T*
+(The system meets CS[02] goals with a reliable, free, local dual-LLM ranking pipeline.) Tj
+T*
+(Extensions include richer embedding pre-filters, calibrated score fusion, and optional) Tj
+T*
+(UI dashboards while preserving the terminal entrypoint.) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 6 0 R /Resources << /Font << /F1 8 0 R >> >> >>
+endobj
+8 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000003026 00000 n 
+0000003152 00000 n 
+0000003222 00000 n 
+0000003585 00000 n 
+0000003711 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+3781
+%%EOF

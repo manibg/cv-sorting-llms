@@ -1,0 +1,26 @@
+Noah Patel
+noah.patel@example.com
++1 555-802-2202
+
+Summary
+Senior Software Engineer with 6 years of experience in Python/FastAPI and TypeScript services. Comfortable owning distributed systems design, cloud deployments on GCP, and cross-team delivery.
+
+Skills
+Python, FastAPI, TypeScript, Node.js, PostgreSQL, GCP (Cloud Run, Pub/Sub, Cloud SQL), Docker, Kubernetes, Redis, GraphQL, REST, pytest, CI/CD, Terraform, OpenTelemetry, System Design
+
+Experience
+Senior Software Engineer — Lumen Health Tech (2022 – Present)
+- Designed multi-tenant appointment APIs serving clinic partners with strict latency SLOs
+- Built Pub/Sub-based async workflows for reminders, billing hooks, and audit trails
+- Migrated monolithic Flask app modules to FastAPI microservices on Cloud Run
+- Established code-review standards and mentored two engineers through first on-call rotations
+- Partnered with security on OAuth2/OIDC integration and secrets rotation
+
+Software Engineer — Stackyard (2019 – 2022)
+- Developed Node.js/TypeScript services and React admin tooling for logistics ops
+- Implemented Redis caching and PostgreSQL schema changes for route planning APIs
+- Automated deploys with Cloud Build and wrote load tests for peak holiday traffic
+
+Education
+B.Tech Information Technology
+6 years of experience building production web services

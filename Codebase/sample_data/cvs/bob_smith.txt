@@ -1,0 +1,16 @@
+Bob Smith
+bob.smith@example.com
++1 555-300-4000
+
+Summary
+Software developer with 3 years of experience focused on Java enterprise apps.
+
+Skills
+Java, Spring, SQL, Hibernate, Maven, Agile
+
+Experience
+- Developed Spring Boot services for finance workflows
+- Wrote SQL reports and batch jobs
+
+Education
+MBA Finance

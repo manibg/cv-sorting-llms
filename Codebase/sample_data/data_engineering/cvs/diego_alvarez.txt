@@ -1,0 +1,24 @@
+Diego Alvarez
+diego.alvarez@example.com
++1 555-704-4404
+
+Summary
+Backend-leaning Data Engineer with 3 years of experience (approaching mid-level). Strong Python and PostgreSQL skills; growing cloud warehouse experience. Solid contributor on batch pipelines, still building depth in streaming and orchestration at scale.
+
+Skills
+Python, SQL, PostgreSQL, Pandas, AWS S3, Airflow (basic), Docker, Git, REST APIs, Linux
+
+Experience
+Data Engineer — ParcelGo Logistics (2023 – Present)
+- Maintained Python ETL jobs loading shipment and warehouse events into PostgreSQL
+- Created Airflow DAGs for nightly reconciliation and late-delivery metrics
+- Improved load performance with incremental extracts and indexed staging tables
+- Collaborated with analysts on reporting tables for operations leadership
+
+Software Engineer (Backend) — SoftNest (2022 – 2023)
+- Built REST services in Python; added export jobs that dumped transactional data to S3
+- Wrote SQL migrations and monitoring for order-service databases
+
+Education
+B.E. Computer Engineering
+3 years of experience in backend and data pipeline development

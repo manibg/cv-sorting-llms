@@ -1,0 +1,26 @@
+Priya Nair
+priya.nair@example.com
++1 555-701-1101
+
+Summary
+Data Engineer with 4.5 years of experience building production ETL/ELT pipelines on AWS. Strong in Python, SQL, Airflow, and Snowflake. Focused on reliable, observable data platforms for analytics and ML feature stores.
+
+Skills
+Python, SQL, Airflow, Snowflake, AWS (S3, Glue, Lambda, Redshift), dbt, Spark (PySpark), Kafka, Git, Docker, Great Expectations, Terraform, CI/CD
+
+Experience
+Data Engineer — Northline Retail (2022 – Present)
+- Built Airflow-orchestrated ELT pipelines moving POS and e-commerce events into Snowflake
+- Reduced failing DAG rate from 8% to under 1% with retries, data quality checks, and alerting
+- Modeled dimensional tables (orders, customers, inventory) used by BI and forecasting teams
+- Introduced dbt tests and documentation for 40+ transformation models
+- Partnered with ML team to publish daily feature tables with 99.5% freshness SLA
+
+Junior Data Engineer — Cloudspan Analytics (2021 – 2022)
+- Developed Python ingestion jobs for REST APIs and relational CDC extracts into S3
+- Wrote tuned SQL for Redshift reporting marts; monitored pipeline SLAs in CloudWatch
+- Containerized batch jobs with Docker and automated deployments through GitHub Actions
+
+Education
+B.Tech Computer Science
+4.5 years of experience in data engineering and cloud data platforms

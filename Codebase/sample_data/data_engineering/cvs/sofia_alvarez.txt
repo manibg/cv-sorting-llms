@@ -1,0 +1,19 @@
+Sofia Alvarez
+sofia.alvarez@example.com
++34 612 440 298
+
+Summary
+Data Engineer with 4 years of experience focused on warehouse modeling and ELT with modern stack tools.
+
+Skills
+Python, SQL, dbt, Snowflake, Airflow, AWS S3, Fivetran, Great Expectations, Data Modeling, Git
+
+Experience
+- Built ELT pipelines into Snowflake using Fivetran + dbt for finance analytics
+- Created dimensional models (star schemas) for sales and inventory marts
+- Added Great Expectations tests to catch null spikes and referential breaks
+- Supported analysts with documented certified datasets
+
+Education
+B.Sc. Data Science
+EOF

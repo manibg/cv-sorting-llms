@@ -1,0 +1,26 @@
+Marcus Chen
+marcus.chen@example.com
++1 555-702-2202
+
+Summary
+Data Engineer with 5 years of experience on GCP data stacks. Builds batch and streaming pipelines with Python, BigQuery, Composer, and Pub/Sub. Comfortable owning end-to-end reliability from ingestion to curated marts.
+
+Skills
+Python, SQL, BigQuery, GCP (Dataflow, Composer, Pub/Sub, GCS), Airflow, Spark, Kafka, dbt, Dataform, Git, Terraform, Looker, Docker
+
+Experience
+Data Engineer — Helio Mobility (2021 – Present)
+- Designed streaming ingestion of vehicle telemetry via Pub/Sub and Dataflow into BigQuery
+- Owned Airflow/Composer DAGs for daily aggregations powering ops dashboards
+- Implemented partitioning/clustering strategies that cut BigQuery scan costs by ~30%
+- Built data quality validations for late-arriving events and schema drift
+- Used Terraform to provision pipeline service accounts, datasets, and scheduling infrastructure
+
+Data Analyst / Engineer — BrightCart (2020 – 2021)
+- Transitioned from analytics into engineering by productionizing SQL models with dbt
+- Automated CSV/SFTP landings into GCS and BigQuery with Python
+- Created dimensional models for marketing attribution and retention reporting
+
+Education
+B.S. Information Systems
+5 years of experience across data analytics and data engineering

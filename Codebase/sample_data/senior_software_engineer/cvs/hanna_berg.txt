@@ -1,0 +1,24 @@
+Hanna Berg
+hanna.berg@example.com
++1 555-805-5505
+
+Summary
+QA Automation Engineer with 6 years of experience in test frameworks and release validation. Strong at quality strategy; little experience designing or operating production microservices as a software engineer.
+
+Skills
+Selenium, Playwright, Cypress, Java, Python (test scripts), Jenkins, TestNG, Jira, API testing (Postman), SQL (basic), Agile/Scrum
+
+Experience
+Senior QA Automation Engineer — Nordic Retail Systems (2020 – Present)
+- Built end-to-end UI automation suites for web checkout flows
+- Integrated regression tests into Jenkins pipelines and reported release readiness
+- Partnered with developers on bug triage; did not own service architecture or production deploys
+- Mentored junior QA engineers on test design
+
+QA Engineer — SoftBeacon (2018 – 2020)
+- Created API test collections and performance smoke checks
+- Maintained test data setups for staging environments
+
+Education
+B.S. Computer Engineering
+6 years of experience in software quality assurance and test automation
